@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="20dp"
+        tools:context=".view.home.MainActivity">
+
+
+        <TextView
+            android:id="@+id/txt_com_id"
+            style="@style/txt_black01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/txt_com_id"
+            android:textColor="#F36464"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/edt_com_id"
+            app:layout_constraintStart_toStartOf="@id/edt_com_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_com_id"
+            style="@style/txt_black01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:enabled="true"
+            android:hint="@string/txt_com_id_info"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/txtblackGuide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_com_id" />
+
+        <TextView
+            android:id="@+id/txt_user_id"
+            style="@style/txt_black01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/txt_user_id"
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/edt_com_id"
+            app:layout_constraintTop_toBottomOf="@id/edt_com_id" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_user_id"
+            style="@style/txt_black01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/txt_user_id_info"
+            android:textColorHint="@color/txtblackGuide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_user_id" />
+
+
+        <TextView
+            android:id="@+id/txt_pw"
+            style="@style/txt_black01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/txt_pw"
+            android:textColor="#3B949C"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@id/edt_com_id"
+            app:layout_constraintTop_toBottomOf="@id/edit_user_id" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_pw"
+            style="@style/txt_black01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/txt_pw_info"
+            android:textColorHint="@color/txtblackGuide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_pw" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#489EF4"
+            android:background="@drawable/btn_login_selector"
+            android:text="Login 1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:letterSpacing="0.05"
+
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_pw" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#418AD3"
+            android:background="@drawable/btn_login_selector"
+            android:text="Login 2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:letterSpacing="0.05"
+
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#3671AC"
+            android:background="@drawable/btn_login_selector"
+            android:text="Login 3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:letterSpacing="0.05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login_2" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_login_selector"
+            android:text="Login 4"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:letterSpacing="0.05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login_3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
