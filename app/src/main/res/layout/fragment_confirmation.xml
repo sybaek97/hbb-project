@@ -15,17 +15,118 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:padding="20dp"
         tools:context=".view.receive.ReceiveActivity">
-        <TextView
-            android:text="확정"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
 
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Row for SKU/Barcode input -->
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DFDFDF"
+                android:padding="30dp">
+
+                <LinearLayout
+                    android:id="@+id/location_contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/date_contain">
+
+                    <TextView
+                        style="@style/receiving_txt"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="이동로케이션(TO)" />
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/location_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:textColorHint="#FF0000"
+                        android:textSize="30sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/date_contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/location_contain"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/confirmation_btn">
+
+                    <TextView
+                        android:textAlignment="center"
+                        style="@style/receiving_txt"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="확정일자" />
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/date_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:text="2024-04-29"
+                        app:layout_constraintStart_toEndOf="@id/header_title"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/confirmation_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="확 정"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/date_contain" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FD0000"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:lineSpacingExtra="10dp"
+                android:textAlignment="center"
+                android:text="입고 확정 후 수정 불가합니다.\n확정시 이동로케이션으로 입고재고가 이동됩니다."
+                app:layout_constraintTop_toBottomOf="@id/confirmation_btn"
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

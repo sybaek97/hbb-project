@@ -21,7 +21,7 @@
             android:id="@+id/header"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#D9EFF8"
+            android:background="#F6F6F6"
             android:orientation="vertical"
             android:padding="15dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -216,16 +216,20 @@
                 android:orientation="horizontal"
                 android:paddingTop="20dp">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/saveButton"
-                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:layout_width="140dp"
+                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:text="추가 저장" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/total_quantity_adjust_button"
-                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:text="총수량 수정" />
             </LinearLayout>
@@ -294,6 +298,13 @@
                         android:layout_weight="1"
                         android:textColorHint="#FF0000"
                         android:hint="0" />
+                    <TextView
+                        style="@style/receiving_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="개" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -319,6 +330,13 @@
                         android:textColorHint="#FF0000"
                         android:layout_weight="1"
                         android:hint="0" />
+                    <TextView
+                        style="@style/receiving_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="개" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -343,6 +361,13 @@
                         android:textColorHint="#FF0000"
                         android:layout_weight="1"
                         android:hint="0" />
+                    <TextView
+                        style="@style/receiving_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="개" />
                 </LinearLayout>
             </LinearLayout>
 

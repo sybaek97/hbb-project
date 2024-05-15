@@ -26,6 +26,10 @@
             android:exported="true">
             <!-- 필요하다면 intent-filter도 여기에 추가 -->
         </activity>
+        <activity android:name=".view.inventoryCheck.InventoryCheckActivity"
+            android:exported="true">
+            <!-- 필요하다면 intent-filter도 여기에 추가 -->
+        </activity>
     </application>
 
 </manifest>

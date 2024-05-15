@@ -30,6 +30,10 @@ class MenuFragment() : BaseFragment() {
         binding.btnMenu1.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_receiveActivity)
         }
+        binding.btnMenu2.setOnClickListener{
+            findNavController().navigate(R.id.action_menuFragment_to_inventoryCheckActivity)
+
+        }
     }
 
 }

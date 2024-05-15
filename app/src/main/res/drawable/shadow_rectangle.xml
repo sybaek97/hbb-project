@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 그림자 Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#40000000" />
+            <corners android:radius="2dp" />
+            <padding
+                android:bottom="4dp"
+                android:right="4dp" />
+        </shape>
+    </item>
+    <!-- 본래 객체 Layer -->
+    <item
+        android:left="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#00286C" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+</layer-list>
