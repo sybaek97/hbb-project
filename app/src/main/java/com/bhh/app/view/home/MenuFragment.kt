@@ -28,7 +28,7 @@ class MenuFragment() : BaseFragment() {
         binding.lifecycleOwner=this
 
         binding.btnMenu1.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_receiveFragment)
+            findNavController().navigate(R.id.action_menuFragment_to_receiveActivity)
         }
     }
 

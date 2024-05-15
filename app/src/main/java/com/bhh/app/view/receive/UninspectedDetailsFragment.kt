@@ -7,18 +7,17 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.bhh.app.R
 import com.bhh.app.application.BaseFragment
-import com.bhh.app.databinding.FragmentReceivingInspectionBinding
+import com.bhh.app.databinding.FragmentUninspectedDetailsBinding
 
-class ReceivingInspectionFragment() :BaseFragment() {
+class UninspectedDetailsFragment() :BaseFragment() {
     override var isBackAvailable: Boolean=false
-    private lateinit var binding : FragmentReceivingInspectionBinding
-
+    private lateinit var binding:FragmentUninspectedDetailsBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding= DataBindingUtil.inflate(inflater, R.layout.fragment_receiving_inspection,container,false)
+        binding= DataBindingUtil.inflate(inflater, R.layout.fragment_uninspected_details,container,false)
         return binding.root
     }
 

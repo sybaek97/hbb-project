@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_menu"
         >
         <action
-            android:id="@+id/action_menuFragment_to_receiveFragment"
+            android:id="@+id/action_menuFragment_to_receiveActivity"
             app:destination="@id/receiveActivity"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit"
